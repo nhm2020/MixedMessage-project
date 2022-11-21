@@ -1,0 +1,44 @@
+//This program will help you to select a random song to listen to base on your mood
+
+
+var sadSongs = ["Hurt-Johnny Cash",
+                "Fix you-Coldplay",
+                "Someone like you-Adele",
+                "Tears in heaven-Eric Clapton",
+                "I cant make you love me-Bonnie Raitt"];
+
+var happySongs= ["You Make My Dreams Come True-Hall&Oates",
+                "September-Earth,Wind&Fire",
+                "Dancing Queen-Abba",
+                "Uptown Funk-Bruno Mars"];
+
+var rockSongs = ["Living on a prayer-Bon Jovi",
+                "Bohemian Rhapsody-Queen",
+                "Sweet Child O Mine-Guns n Roses",
+                "Misery Business-Paramore"];
+
+let mood;
+songSelector=mood=>{
+
+switch(mood){
+case 'sad':
+    var random= Math.floor(Math.random()*(sadSongs.length));
+    return sadSongs[random];
+    break; 
+
+case 'happy':
+var random= Math.floor(Math.random()*(happySongs.length));
+return happySongs[random];
+break; 
+
+case 'rockon':
+var random= Math.floor(Math.random()*(rockSongs.length));
+return rockSongs[random];
+break; 
+
+default:
+    return "Invalid choice"; }  
+
+}
+
+
